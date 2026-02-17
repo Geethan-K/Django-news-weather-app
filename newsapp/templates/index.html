@@ -1,0 +1,19 @@
+{% load static %}
+<html>
+    <head>
+        <title>News App</title>
+        <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css" />
+    <body>
+        <div class="container">
+            {% for news in articles %}
+            <div>
+                <h1>{{ news.title | linebreaks }}</h1>
+            </div>
+            <div class="container">
+                <img alt="img not found" class="img-container" src="{{ news.urlToImage }}"/>
+            </div>
+            <div>{{ news.description }}</div>
+            {% endfor %}
+        </div>
+    </body>
+</html>

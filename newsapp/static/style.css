@@ -1,0 +1,17 @@
+body{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    
+}
+.img-container{
+    height: 300px;
+    width: 300px;
+   text-align: center;
+}
